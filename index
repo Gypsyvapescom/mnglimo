@@ -1,0 +1,367 @@
+<style>
+  :root {
+    --black:#050505;
+    --charcoal:#111111;
+    --dark-gray:#1b1b1b;
+    --gray:#6f6f6f;
+    --light-gray:#f4f4f4;
+    --white:#ffffff;
+    --silver:#c9c9c9;
+    --silver-dark:#9f9f9f;
+  }
+
+  body {
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--black);
+    color:var(--white);
+    line-height:1.6;
+  }
+
+  a { text-decoration:none; color:inherit; }
+
+  .mng-page * { box-sizing:border-box; }
+
+  .mng-hero {
+    min-height:90vh;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,.92), rgba(0,0,0,.55)),
+      url('https://www.mnglimollc.com/wp-content/uploads/2024/06/Escalade.jpg') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding:80px 6%;
+  }
+
+  .mng-hero-content {
+    max-width:780px;
+  }
+
+  .mng-eyebrow {
+    color:var(--silver);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:14px;
+    margin-bottom:18px;
+  }
+
+  .mng-hero h1 {
+    font-size:clamp(42px, 7vw, 86px);
+    line-height:1.05;
+    margin:0 0 24px;
+    font-weight:800;
+  }
+
+  .mng-hero h1 span {
+    color:var(--silver);
+  }
+
+  .mng-hero p {
+    font-size:20px;
+    color:#e5e5e5;
+    max-width:650px;
+    margin-bottom:34px;
+  }
+
+  .mng-buttons {
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+
+  .mng-btn {
+    padding:15px 30px;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s ease;
+  }
+
+  .mng-btn-primary {
+    background:linear-gradient(135deg, var(--silver), var(--silver-dark));
+    color:#000;
+  }
+
+  .mng-btn-primary:hover {
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(201,201,201,.25);
+  }
+
+  .mng-btn-outline {
+    border:1px solid var(--silver);
+    color:var(--silver);
+  }
+
+  .mng-section {
+    padding:90px 6%;
+  }
+
+  .mng-section-light {
+    background:var(--light-gray);
+    color:var(--black);
+  }
+
+  .mng-section-title {
+    max-width:760px;
+    margin-bottom:50px;
+  }
+
+  .mng-section-title h2 {
+    font-size:clamp(32px, 4vw, 54px);
+    margin:0 0 16px;
+  }
+
+  .mng-section-title p {
+    color:var(--gray);
+    font-size:18px;
+  }
+
+  .mng-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:24px;
+  }
+
+  .mng-card {
+    background:var(--charcoal);
+    border:1px solid rgba(201,201,201,.18);
+    border-radius:22px;
+    padding:30px;
+    transition:.3s ease;
+  }
+
+  .mng-card:hover {
+    transform:translateY(-6px);
+    border-color:var(--silver);
+  }
+
+  .mng-card h3 {
+    color:var(--silver);
+    font-size:24px;
+    margin-top:0;
+  }
+
+  .mng-card p {
+    color:#d6d6d6;
+  }
+
+  .mng-fleet-card {
+    background:#fff;
+    color:#000;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+  }
+
+  .mng-fleet-card img {
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
+  }
+
+  .mng-fleet-card div {
+    padding:24px;
+  }
+
+  .mng-fleet-card h3 {
+    margin:0 0 8px;
+    font-size:22px;
+  }
+
+  .mng-service-card {
+    background:#fff;
+    color:#000;
+    border-left:5px solid var(--silver-dark);
+    border-radius:18px;
+    padding:28px;
+  }
+
+  .mng-service-card h3 {
+    margin-top:0;
+  }
+
+  .mng-cta {
+    background:
+      linear-gradient(135deg, rgba(0,0,0,.94), rgba(20,20,20,.92));
+    text-align:center;
+    border-top:1px solid rgba(201,201,201,.2);
+    border-bottom:1px solid rgba(201,201,201,.2);
+  }
+
+  .mng-cta h2 {
+    font-size:clamp(34px, 5vw, 60px);
+    margin-bottom:18px;
+  }
+
+  .mng-contact {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:24px;
+  }
+
+  .mng-contact-box {
+    background:var(--charcoal);
+    border:1px solid rgba(201,201,201,.2);
+    border-radius:20px;
+    padding:28px;
+  }
+
+  .mng-contact-box strong {
+    color:var(--silver);
+    display:block;
+    margin-bottom:8px;
+  }
+
+  @media(max-width:700px) {
+    .mng-hero {
+      padding:70px 24px;
+    }
+
+    .mng-section {
+      padding:70px 24px;
+    }
+  }
+</style>
+
+<div class="mng-page">
+
+  <section class="mng-hero">
+    <div class="mng-hero-content">
+      <div class="mng-eyebrow">Luxury Black SUV Transportation</div>
+      <h1>Experience Luxury Travel with <span>MNG LIMO LLC</span></h1>
+      <p>
+        Premium chauffeur service for airport transfers, corporate travel, special events,
+        hourly rentals, and private city transportation.
+      </p>
+      <div class="mng-buttons">
+        <a class="mng-btn mng-btn-primary" href="tel:8187301967">Call / Text 818-730-1967</a>
+        <a class="mng-btn mng-btn-outline" href="#fleet">View Fleet</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mng-section">
+    <div class="mng-section-title">
+      <h2>Professional, Private, and Always on Time</h2>
+      <p>
+        MNG LIMO LLC delivers a refined transportation experience with luxury SUVs,
+        trained chauffeurs, flexible booking, and personalized service.
+      </p>
+    </div>
+
+    <div class="mng-grid">
+      <div class="mng-card">
+        <h3>Exquisite Fleet</h3>
+        <p>Travel in clean, spacious, luxury SUVs maintained for comfort, style, and reliability.</p>
+      </div>
+      <div class="mng-card">
+        <h3>Professional Chauffeurs</h3>
+        <p>Courteous, experienced drivers focused on safety, privacy, and first-class service.</p>
+      </div>
+      <div class="mng-card">
+        <h3>Punctual Service</h3>
+        <p>Dependable pickup and drop-off service for airport rides, meetings, and events.</p>
+      </div>
+      <div class="mng-card">
+        <h3>Personalized Rides</h3>
+        <p>Every trip is tailored around your schedule, route, preferences, and occasion.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="fleet" class="mng-section mng-section-light">
+    <div class="mng-section-title">
+      <h2>Luxury SUV Fleet</h2>
+      <p>Choose from premium black SUV options designed for executive comfort and elegant arrivals.</p>
+    </div>
+
+    <div class="mng-grid">
+      <div class="mng-fleet-card">
+        <img src="https://www.mnglimollc.com/wp-content/uploads/2024/06/2024-Cadillac-Escalade-ESV.jpg" alt="2024 Cadillac Escalade ESV">
+        <div>
+          <h3>2024 Cadillac Escalade ESV</h3>
+          <p>Premium luxury, spacious seating, and executive presence.</p>
+        </div>
+      </div>
+
+      <div class="mng-fleet-card">
+        <img src="https://www.mnglimollc.com/wp-content/uploads/2024/06/2024-Lincoln-Navigator-L.jpg" alt="2024 Lincoln Navigator L">
+        <div>
+          <h3>2024 Lincoln Navigator L</h3>
+          <p>Refined comfort for business travel, airport transfers, and events.</p>
+        </div>
+      </div>
+
+      <div class="mng-fleet-card">
+        <img src="https://www.mnglimollc.com/wp-content/uploads/2024/06/2024-GMC-Yukon-XL-SLT.jpg" alt="2024 GMC Yukon XL SLT">
+        <div>
+          <h3>2024 GMC Yukon XL SLT</h3>
+          <p>Roomy, smooth, and ideal for private group transportation.</p>
+        </div>
+      </div>
+
+      <div class="mng-fleet-card">
+        <img src="https://www.mnglimollc.com/wp-content/uploads/2024/06/2024-Chevy-Suburban-RST.jpg" alt="2024 Chevy Suburban RST">
+        <div>
+          <h3>2024 Chevy Suburban RST</h3>
+          <p>Stylish black SUV transportation with comfort and versatility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mng-section mng-section-light">
+    <div class="mng-section-title">
+      <h2>Services We Offer</h2>
+      <p>Reliable luxury transportation for personal, corporate, airport, and special occasion travel.</p>
+    </div>
+
+    <div class="mng-grid">
+      <div class="mng-service-card">
+        <h3>Airport Transfers</h3>
+        <p>Smooth airport pickup and drop-off service with flight-aware scheduling.</p>
+      </div>
+      <div class="mng-service-card">
+        <h3>Corporate Travel</h3>
+        <p>Professional executive transportation for meetings, clients, and business events.</p>
+      </div>
+      <div class="mng-service-card">
+        <h3>Special Occasions</h3>
+        <p>Elegant black SUV service for weddings, proms, anniversaries, and celebrations.</p>
+      </div>
+      <div class="mng-service-card">
+        <h3>Hourly Rentals</h3>
+        <p>Flexible chauffeur service when you need luxury transportation by the hour.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mng-section mng-cta">
+    <h2>Book Your Luxury Ride Today</h2>
+    <p>Simple booking. Transparent pricing. Professional service.</p>
+    <br>
+    <a class="mng-btn mng-btn-primary" href="tel:8187301967">Call / Text Now</a>
+  </section>
+
+  <section class="mng-section">
+    <div class="mng-section-title">
+      <h2>Contact MNG LIMO LLC</h2>
+      <p>Serving Sherman Oaks, Los Angeles, airports, events, and private transportation needs.</p>
+    </div>
+
+    <div class="mng-contact">
+      <div class="mng-contact-box">
+        <strong>Location</strong>
+        Sherman Oaks, CA
+      </div>
+      <div class="mng-contact-box">
+        <strong>Phone</strong>
+        <a href="tel:8187301967">818-730-1967</a>
+      </div>
+      <div class="mng-contact-box">
+        <strong>Email</strong>
+        <a href="mailto:mnglimollc@gmail.com">mnglimollc@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</div>
